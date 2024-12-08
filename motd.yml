@@ -1,4 +1,5 @@
 ---
+#Play
 - name: demonstrate ansible facts
   hosts: ubuntu1
   remote_user: ansible
