@@ -1,0 +1,12 @@
+---
+- name: demonstrate ansible facts
+  hosts: ubuntu1
+  remote_user: ansible
+  become: yes
+  #Task bigins
+  tasks:
+   - name: First task
+     copy:
+      dest: /etc/motd
+      content: "This {{ansible_hostname}} is being managed by Ansible \n"
+...
