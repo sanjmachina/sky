@@ -9,4 +9,5 @@
      copy:
       dest: /etc/motd
       content: "This {{ansible_hostname}} is being managed by Ansible \n"
+      #End of the play book
 ...
